@@ -7,9 +7,9 @@ body {
   margin: 0px;
 }
 
- * {
-  border: 1px dashed red;
-} 
+/** {*/
+/*  border: 1px dashed red;*/
+/*} */
 
 #main {
   background: url("./media/bg.jpg");
@@ -44,7 +44,7 @@ body {
 
 .center-container .top .header {
   position: relative;
-  font-family: UbuntuBold;
+  font-family: UbuntuBold, sans-serif;
   text-align: center;
   color: white;
   margin: 0;
