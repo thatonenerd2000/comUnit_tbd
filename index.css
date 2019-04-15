@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "UbuntuBold";
+  src: url("Ubuntu-Bold.ttf");
+}
+
 body {
   margin: 0px;
 }
+
+/* * {
+  border: 1px dashed red;
+} */
+
 #main {
-  background-image: url("./media/bg.jpg");
+  background: url("./media/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(5px);
@@ -15,14 +25,54 @@ body {
   left: 0;
 }
 
-#login {
-  width: 400px;
-  height: 400px;
+.center-container {
   position: fixed;
+  display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  transform: translate(-50%, -60%);
+}
+
+.center-container .top {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 100px;
+}
+
+.center-container .top .header {
+  font-family: UbuntuBold;
+  text-align: center;
+  color: white;
+}
+
+.center-container .bottom {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 400px;
   background: white;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.input-field {
+  display: block;
+  width: 400px;
+  height: 100px;
+  padding: 20px 0;
+}
+
+.input-field .icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+}
+
+.input-field input {
+  text-align: center;
 }
