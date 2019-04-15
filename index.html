@@ -26,30 +26,32 @@
         <div class="top">
           <h3 class="header">Account Login</h3>
         </div>
+        
         <div class="bottom">
-          <div class="input-field">
-            <i class="material-icons icon">account_circle</i>
-            <input
-              id="email"
-              type="email"
-              class="validate"
-              style="display: inline-block; width: 70%"
-            />
-            <label style="text-align:center;" for="icon_prefix">User ID</label>
+          <div class="field-container">
+            <div class="input-field-container">
+              <i class="material-icons icon">account_circle</i>
+              <div class="input-container">
+                <input id="email" type="email" class="validate"   />
+                <label style="text-align:center;" for="icon_prefix">User ID</label>
+              </div>
+            </div>
+            
+  
+            <div class="input-field-container">
+              <i class="material-icons icon">lock</i>
+              <div class="input-container">
+                <input id="password" type="password" class="validate" />
+                <label style="text-align:center" for="icon_prefix">Password</label>
+              </div>
+            </div>
+            
           </div>
 
-          <br />
-
-          <div class="input-field">
-            <i class="material-icons icon">lock</i>
-            <input
-              id="password"
-              type="email"
-              class="validate"
-              style="display: inline-block; width: 70%"
-            />
-            <label style="text-align:center" for="icon_prefix">Password</label>
-          </div>
+          <button class="btn waves-effect waves-light" onclick="login()">SignIn
+            <i class="material-icons right">send</i>
+          </button>
+          <p id="wronglabel" style="color:red;display:none;">Incorrect User ID or Password</p>
         </div>
       </div>
     </div>

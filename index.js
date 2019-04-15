@@ -12,18 +12,17 @@ firebase.initializeApp(config);
 var auth = firebase.auth();
 
 login = () => {
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var wrongLabel = document.getElementById("wronglabel");
   auth.signOut();
   auth
-    .signInWithEmailAndPassword(email, pass)
+    .signInWithEmailAndPassword(email, password)
     .then(user => {
-      username.innerHTML = "Welcome, " + user.user.displayName;
-      usernamedb = user.user.displayName;
+      console.log(user);
+      console.log("it reacherd here");
+    }).catch(error => {
+      console.log(error);
+      wrongLabel.style.display = "block";
     })
-    .then(() => {
-      signinpage.style.display = "none";
-      loggedin.style.display = "block";
-      logoutbtn.style.display = "block";
-    });
 };
