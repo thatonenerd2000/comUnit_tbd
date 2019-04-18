@@ -19,8 +19,7 @@ login = () => {
   auth
     .signInWithEmailAndPassword(email, password)
     .then(user => {
-      console.log(user);
-      console.log("it reacherd here");
+      window.location.href = "office.html"
     }).catch(error => {
       console.log(error);
       wrongLabel.style.display = "block";

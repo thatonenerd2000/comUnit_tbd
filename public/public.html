@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ComUnit</title>
+        <link rel="stylesheet" href="public.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" />
+        
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AuyI2iuaBDhptSUphEnSVX6LR6_S5ha9WQGz2XjcMqHRkFoz8P5K_F_g83nrNel0' async defer></script>
+    </head>
+    
+    <body>
+            
+        <div id="main"></div>
+        
+        <div class="navbar-fixed">
+            <nav class="transparent">
+                <div class="nav-wrapper">
+                  <a style="padding-left:150px;font-family: 'Roboto', sans-serif; " href="#" class="brand-logo"><img id="logo" src="./media/comunit.png" /></a>
+                  <ul style="padding-right:150px;font-family: 'Roboto', sans-serif; " id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">About</a></li>
+                    <li><a href="badges.html">Map</a></li>
+                  </ul>
+                  
+                </div>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <div class="center-container">
+                <h1 
+                class="scrolla"
+                data-animate="fadeInDown"
+                data-duration="1.5s"
+                data-delay="0.1s" 
+                style="text-align:center;font-family: 'Roboto', sans-serif;font-weight:800;color:white;">For Better Unity, <br> Help Your Community</h1>
+                <h6 class="scrolla"
+                data-animate="fadeInUp"
+                data-duration="1.5s"
+                data-delay="0.1s"
+                style="text-align:center;font-family: 'Roboto', sans-serif;color:white;">Know your community, Your Voice Matters
+                </h6>
+                <br>
+                <div data-animate="fadeInUp"
+                data-duration="1.5s"
+                data-delay="0.1s" class="scrolla" style="text-align:center">
+                    <button
+                    style="text-align:center; border-radius:20px;" id="comunit" class="btn waves-effect red">Get Started</button>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <h3 id="pendingComplaintsCount"></h3>
+                <p id="description"></p>
+                <div id="myMap">
+                    <div id="mapLoading">
+                        <p id="loadingText">Loading Data...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="google_translate_element"></div>
+        
+        <div style="display:none;" id="pop_main">
+            <div id = "pop_back"></div>
+            <div class="center-container2">
+                <div style="height:inherit; width:80vw; padding: 20px 50px; background-color:white;border-radius:20px;text-align:center;font-family: 'Roboto', sans-serif;">
+                    <u><h6 style="padding-top:25px">Locate your Community Board</h6></u>
+                    <input id = "cbn" type="number" min="0" max="12" class="validate" value="6"  />
+                    <label style="text-align:center;" for="icon_prefix">Community Board #</label>
+                    <br>
+                    <br>
+                    <select bob="123" style="text-align:center; " id="cbb">
+                      <option value="BRONX">Bronx</option>
+                      <option value="BROOKLYN">Brooklyn</option>
+                      <option value="MANHATTAN" selected>Manhattan</option>
+                      <option value="QUEENS">Queens</option>
+                      <option value="STATEN%20ISLAND">Staten Island</option>
+                    </select>
+                    <label style="text-align:center" for="icon_prefix">Community Board Borough</label>
+                    <br>
+                    <br>
+                    <select style="text-align:center; " id="issue">
+                      <option value="HEAT/HOT%20WATER selected">Heat and Hot Water</option>
+                      <option value="NOISE">Noise</option>
+                      <option value="PLUMBING">Plumbing</option>
+                      <option value="Sanitation%20Condition">Sanitary</option>
+                      <option value="GENERAL%20CONSTRUCTION">General Construction</option>
+                      <option value="PAINT/PLASTER">Paint</option>
+                    </select>
+                    <label>Select Issue</label>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn waves-effect waves-light" id="submit">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <br>
+                    <br>
+                    <h6 style="padding-top:25px">Don't know your Community Board?</h6>
+                    <br>
+                    <button class="btn waves-effect orange darken-1">
+                        <i class="material-icons center">my_location</i>
+                    </button>
+                    <br>
+                    <label style="text-align:center" for="icon_prefix">Locate your Community Board</label>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!--<script type="text/javascript" src="map.js"></script>-->
+        <script type="text/javascript" src="public.js"></script>
+        <script type="text/javascript" src="scrolla.js"></script>
+        
+    </body>
+</html>

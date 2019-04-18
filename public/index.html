@@ -1,62 +1,9 @@
-<!-- view-source:https://colorlib.com/etc/lf/Login_v16/index.html -->
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AuyI2iuaBDhptSUphEnSVX6LR6_S5ha9WQGz2XjcMqHRkFoz8P5K_F_g83nrNel0' async defer></script>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>ComUnit</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Sniglet"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div id="main"></div>
+<a href="login.html">Login</a>
+<a href="office.html">Office</a>
+<a href="public.html">Public</a>
 
-    <div class="content">
-      <div class="center-container">
-        <div class="top">
-          <h3 class="header">ComUnit Login</h3>
-        </div>
-        
-        <div class="bottom">
-          <div class="field-container">
-            <div class="input-field-container">
-              <i class="material-icons icon">account_circle</i>
-              <div class="input-container">
-                <input id="email" type="email" class="validate"   />
-                <label style="text-align:center;" for="icon_prefix">User ID</label>
-              </div>
-            </div>
-            
-  
-            <div class="input-field-container">
-              <i class="material-icons icon">lock</i>
-              <div class="input-container">
-                <input id="password" type="password" class="validate" />
-                <label style="text-align:center" for="icon_prefix">Password</label>
-              </div>
-            </div>
-            
-          </div>
+<div id="myMap"></div>
 
-          <button class="btn waves-effect waves-light" onclick="login()">SignIn
-            <i class="material-icons right">send</i>
-          </button>
-          <p id="wronglabel" style="color:red;display:none;">Incorrect User ID or Password</p>
-        </div>
-      </div>
-    </div>
-
-    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
-    <script src="index.js"></script>
-  </body>
-</html>
+<script src="map.js"></script>
